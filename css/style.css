@@ -1,0 +1,112 @@
+/* GLOBAL RESETS */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+
+TABLE OF CONTENTS
+
+# GLOBAL RESETS
+# BASE TYPOGRAPHY
+# BUTTONS
+# MEDIA
+    # RESPONSIVE IMAGES
+# LAYOUT
+    # CONTAINER
+    # MEDIA QUERIES
+    # SEMANTIC GRID SYSTEM
+# STRUCTURE
+    # SITE HEADER
+    # SITE NAV
+    # MAIN
+        # SECTIONS
+    # SITE FOOTER
+
+
+*/
+/* BASE TEXT COLORS */
+body {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(0, 0, 0);
+}
+
+/* BASE TEXT FONTS */
+body {
+  font-family: "Source Sans Pro", "new-hero", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", "Kepler", "Times New Roman", Times, serif;
+}
+
+/* BASE TYPOGRAPHY */
+body {
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 0.5em 0;
+}
+
+/* TRADITIONAL TYPOGRAPHIC SCALE */
+h1 {
+  font-size: 3em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+/* LIMIT NUMBER OF CHARACTERS PER LINE */
+p {
+  max-width: 30em;
+}
+
+/* HORIZONTAL LINE */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 3em 0;
+}
+
+/* TYPE SPECIMEN */
+.headline {
+  font-size: 4em;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  color: rgb(87, 160, 255);
+}
+
+.subheadline {
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0.25em 0;
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-size: 1em;
+  font-family: "Source Sans Pro", "new-hero", Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: table;
+  margin: 3em 0;
+}
