@@ -7,7 +7,11 @@ $color-text-body: rgba(0,0,0,.8);
 $color-text-headings: rgba(0,0,0,1);
 $color-accent: rgb(87, 160, 255);
 $color-accent-dark: rgb(224, 142, 150);
-$color-accent-light: rgb(255, 225, 230);
+$color-accent-light: rgb(255, 205, 213);
+$color-link: rgb(142, 223, 255);
+$color-background: linear-gradient(to bottom right, #E1BEE7, #B2EBF2);
+
+
 
 $color-lightgrey: rgba(0,0,0,.5);
 
@@ -22,10 +26,10 @@ $breakpoint-large: 1250px;
 // IMPORTS
 @import "partials/toc";
 @import "partials/typography";
-// @import "partials/buttons";
-// @import "partials/media"; 
-// @import "partials/layout";   
-// @import "partials/grid";   
-// @import "partials/structure";  
+@import "partials/buttons";
+@import "partials/media"; 
+@import "partials/layout";   
+@import "partials/grid";   
+@import "partials/structure";  
 
 
