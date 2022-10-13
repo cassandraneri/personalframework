@@ -1,1 +1,55 @@
 /* SITE NAV */
+
+.site-nav {
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+        line-height: 1;
+    }
+
+    .menu-button:hover {
+        // background-color: solid white;
+        // border: 1px rgba(0, 0, 0, .8);
+        // color: rgba(0, 0, 0, .8);
+    }
+}
+
+.site-header {
+    .site-nav {
+        ul {
+            background-color: pink;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translate(0,0);
+            transition: all .3s ease-out;
+        }
+    
+    &[data-navstate="closed"] {
+        ul {
+            transform: translate(100%,-100%); 
+        }
+    }
+
+    }
+    .menu-button {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: .5em;
+    }
+}

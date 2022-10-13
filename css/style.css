@@ -338,6 +338,55 @@ section {
 }
 
 /* SITE NAV */
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.site-nav a {
+  display: inline-block;
+  padding: 1em;
+  line-height: 1;
+}
+.site-header .site-nav ul {
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.site-header .site-nav[data-navstate=closed] ul {
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+}
+.site-header .menu-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5em;
+}
+
 /* ANIMATIONS */
 .animate-on-scroll {
   -webkit-transition: all ease-out 2s;

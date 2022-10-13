@@ -1,8 +1,14 @@
+document.addEventListener('DOMContentLoaded', function () {
+// JS SCRIPTS GO HERE
+  console.log("what's up cass?");
+});
+
 // OVERLAY NAV MENU SHOW HIDE
 const mymenubutton = document.querySelector('.menu-button');
 const mysitenav = document.querySelector('.site-header .site-nav');
 
 mymenubutton.onclick = function() {
+// statements go here
     if (mysitenav.getAttribute('data-navstate') === 'open') {
         mysitenav.setAttribute('data-navstate', 'closed')
     } else {
