@@ -1,12 +1,12 @@
 /* SITE NAV */
-
+/* SITE-NAV */
 .site-nav {
 
-    ul{
+    ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: flex;
+        display: flex; 
     }
 
     a {
@@ -14,18 +14,15 @@
         padding: 1em;
         line-height: 1;
     }
-
-    .menu-button:hover {
-        // background-color: solid white;
-        // border: 1px rgba(0, 0, 0, .8);
-        // color: rgba(0, 0, 0, .8);
-    }
+ 
 }
 
 .site-header {
+
     .site-nav {
+ 
         ul {
-            background-color: pink;
+            background: pink;
             position: fixed;
             top: 0;
             right: 0;
@@ -38,18 +35,49 @@
             transform: translate(0,0);
             transition: all .3s ease-out;
         }
-    
-    &[data-navstate="closed"] {
-        ul {
-            transform: translate(100%,-100%); 
+
+        &[data-navstate="closed"] {
+            ul {
+                transform: translate(100%,0%);
+            }
         }
+
+        .menu-button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: .7em;
+            position: relative;
+            z-index: 20;
+
+            svg {
+                display: block;
+
+                rect {
+                    fill: white;
+                    transform-origin: center;
+                    transition: all .3s ease-out;
+                }
+            }
+
+        }
+
+        &[data-navstate="open"] .menu-button svg {
+
+            #menubar-top {
+                transform: translate(-5px,9px) rotate(30deg);
+            }
+            
+            #menubar-mid {
+                transform: scale(0,1);
+            }
+
+            #menubar-bot {
+                transform: translate(-5px,-9px) rotate(-30deg);
+            }
+
+        }
+        
     }
 
-    }
-    .menu-button {
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-        padding: .5em;
-    }
 }
