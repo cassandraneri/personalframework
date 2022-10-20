@@ -30,7 +30,7 @@ body {
   color: rgba(0, 0, 0, 0.8); }
 
 h1, h2, h3, h4, h5, h6 {
-  color: red; }
+  color: black; }
 
 /* BASE TEXT FONTS */
 body {
@@ -95,6 +95,12 @@ hr {
   letter-spacing: .05em;
   display: table;
   margin: 3em 0; }
+
+/* HELPERS */
+.hide-visually {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 /* BUTTONS */
 .button {
@@ -273,7 +279,7 @@ body {
 
 section {
   padding: 4em 0;
-  min-height: 100vh;
+  min-height: 101vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +305,7 @@ section {
   align-items: center;
   padding: 10em 0 6em 0;
   color: white;
-  min-height: 100vh; }
+  min-height: 101vh; }
   .hero .container {
     width: 100%; }
   .hero h1 {
@@ -328,7 +334,7 @@ section {
   top: 0;
   right: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 101vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,3 +561,12 @@ section {
 
 .animate-on-scroll[data-sectionstate="active"] {
   opacity: 1; }
+
+section[data-sectionstate="active"] {
+  background: pink;
+  -webkit-transition: all .4s linear .5s;
+  -o-transition: all .4s linear .5s;
+  transition: all .4s linear .5s; }
+
+section[data-sectionstate="inactive"] {
+  background: teal; }

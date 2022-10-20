@@ -10,3 +10,13 @@
 .animate-on-scroll[data-sectionstate="active"] {
     opacity: 1;
 }
+
+section[data-sectionstate="active"] {
+    // opacity: 1;
+    background: pink;
+    transition: all .4s linear .5s;
+}
+section[data-sectionstate="inactive"] {
+    background: teal;
+    // opacity: 0;
+}
