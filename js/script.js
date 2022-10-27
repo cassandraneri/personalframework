@@ -29,6 +29,7 @@ const myobserver = new IntersectionObserver(entries => {
 });
 
 
-document.querySelectorAll('.animate-on-scroll').forEach((section) => {
+document.querySelectorAll('.scroll-triggered').forEach((section) => {
   myobserver.observe(section);
 });
+
